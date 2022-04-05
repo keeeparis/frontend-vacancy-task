@@ -93,6 +93,7 @@ export const Description = styled.div`
     } 
 `
 export const ChevronWrapper = styled.div<{ isOpen: boolean }>`
+    margin-left: auto;
     transition: all 0.2s ease-in-out;
     transform: ${props => props.isOpen 
         ?   css`rotateX(180deg) translateY(5px)`
