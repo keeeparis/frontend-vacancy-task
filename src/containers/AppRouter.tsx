@@ -15,7 +15,7 @@ const Token = lazy(() => import('../pages/Token'))
 const AppRouter = () => {
     return (
         <Suspense fallback={<div>Loading...</div>}>
-            <Router basename={'/'}>
+            <Router basename={'/frontend-vacancy-task'}>
                 <Routes>
                     <Route path='/' element={<Layout />}>
                         <Route index element={<Main />} />
