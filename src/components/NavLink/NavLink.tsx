@@ -1,22 +1,21 @@
-import { useMemo } from 'react'
 import { useLocation } from 'react-router'
 import { Link } from 'react-router-dom'
+
 import { Menu } from '../../mock/types'
 import * as N from './styles'
 
 const NavLink = ({ item }: { item: Menu }) => {
     const location = useLocation()
-    console.log(location)
 
-    // TODO: 
-    // const isActive = useMemo(() => {
-    //     item.id
-    // }, params)
+    const isActive = location.pathname === `/${item.id}`
 
     return (
         <N.Wrapper>
             <Link to={`/${item.id}`}>
-                {item.title}
+                <N.Inner active={isActive}>
+                    {item.icon}
+                    <N.Text>{item.title}</N.Text>
+                </N.Inner>
             </Link>
         </N.Wrapper>
     )
