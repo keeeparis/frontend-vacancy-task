@@ -1,11 +1,13 @@
-import { Token } from '../../mock/types'
+import { Link } from 'react-router-dom'
+import { useCallback, useState } from 'react'
+
+import ColorNumbers from '../ColorNumbers'
 import * as T from './styles'
+
 import { ReactComponent as UsersIcon } from '../../media/users.svg'
 import { ReactComponent as ChevronDownIcon } from '../../media/chevron-down.svg'
-import ColorNumbers from '../ColorNumbers/ColorNumbers'
-import { useCallback, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { numberWithSpaces } from '../../utils/addSpaceToNumbers'
+import { Token } from '../../mock/types'
 
 const TokenItem = ({ item }: { item: Token }) => {
     const [isDescription, setIsDescription] = useState(false)

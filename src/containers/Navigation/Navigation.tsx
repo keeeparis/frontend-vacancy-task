@@ -1,7 +1,8 @@
-import { menu } from '../../mock/menu'
+import NavLink from '../../components/NavLink'
 import * as N from './styles'
+
+import { menu } from '../../mock/menu'
 import { ReactComponent as LogoIcon } from '../../media/Logo.svg'
-import NavLink from '../../components/NavLink/NavLink'
 
 const Navigation = () => {
     return (
@@ -15,6 +16,9 @@ const Navigation = () => {
                     item={item}
                 />
             ))}
+            <N.Footer>
+                Русский
+            </N.Footer>
         </N.Wrapper>
     )
 }

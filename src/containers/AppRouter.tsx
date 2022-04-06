@@ -4,11 +4,13 @@ import {
     Routes,
     Route
 } from 'react-router-dom'
-import Layout from './Layout/Layout'
 
-const App = lazy(() => import('../pages/App/App'))
-const Search = lazy(() => import('../pages/Search/Search'))
-const Token = lazy(() => import('../pages/Token/Token'))
+import Layout from './Layout'
+import Main from '../pages/Main'
+
+const App = lazy(() => import('../pages/App'))
+const Search = lazy(() => import('../pages/Search'))
+const Token = lazy(() => import('../pages/Token'))
 
 const AppRouter = () => {
     return (
@@ -16,7 +18,8 @@ const AppRouter = () => {
             <Router basename={'/'}>
                 <Routes>
                     <Route path='/' element={<Layout />}>
-                        <Route index element={<App />} />
+                        <Route index element={<Main />} />
+                        <Route path='tokens' element={<App />} />
                         <Route path='search' element={<Search />} />
                         <Route path=':id' element={<Token />} />
                     </Route>

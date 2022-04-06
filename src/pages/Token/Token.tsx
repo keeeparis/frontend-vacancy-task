@@ -1,5 +1,6 @@
-import * as T from './styles'
 import { useParams } from 'react-router'
+
+import * as T from './styles'
 
 const Token = () => {
     const params = useParams()

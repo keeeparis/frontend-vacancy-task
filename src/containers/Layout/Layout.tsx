@@ -1,7 +1,9 @@
 import { Outlet } from 'react-router'
-import Navigation from '../Navigation/Navigation'
-import { GlobalStyle } from '../../styles';
+
+import Navigation from '../Navigation'
 import * as L from './styles'
+
+import { GlobalStyle } from '../../styles'
 
 const Layout = () => {
     return (

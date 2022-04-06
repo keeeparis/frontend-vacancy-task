@@ -1,9 +1,11 @@
 import { useState, SyntheticEvent } from 'react'
+
+import TokenItem from '../../components/TokenItem'
+import Button from '../../components/Button'
+import * as A from './styles'
+
 import { tokens, categories } from '../../mock/tokens'
 import { useItems } from '../../hooks/useItems'
-import TokenItem from '../../components/TokenItem/TokenItem'
-import * as A from './styles'
-import Button from '../../components/Button/Button'
 
 function App() {
     const [category, setCategory] = useState(categories[0])
