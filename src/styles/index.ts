@@ -19,10 +19,6 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
-    html {
-        overflow-y: scroll;
-    }
-
     body {
         color: black;
         font-family: 'Montserrat';

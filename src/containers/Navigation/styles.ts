@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-    padding: 24px;
+    padding: 24px 64px 24px 24px;
     background: var(--gradient-color);
     height: 100vh;
     position: sticky;

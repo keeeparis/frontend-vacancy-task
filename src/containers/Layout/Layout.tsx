@@ -12,6 +12,7 @@ const Layout = () => (
         <L.Wrapper>
             <Navigation />
             <L.Container>
+                <L.Block />
                 <Outlet />
             </L.Container>
         </L.Wrapper>
