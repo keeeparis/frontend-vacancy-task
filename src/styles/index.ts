@@ -36,5 +36,14 @@ const GlobalStyle = createGlobalStyle`
         color: inherit;
         text-decoration: none;
     }
+
+    .fade-appear {
+        opacity: 0.01;
+    }
+
+    .fade-appear.fade-appear-active {
+        opacity: 1;
+        transition: opacity 500ms ease-in;
+    }
 `
 export default GlobalStyle
