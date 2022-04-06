@@ -9,7 +9,6 @@ else
     echo "folder dist does not exist"
 fi
 
-npm run lint
 npm run build
 
 cd build
