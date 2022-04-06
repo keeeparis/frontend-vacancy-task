@@ -11,26 +11,28 @@ import numberWithSpaces from '../../utils/addSpaceToNumbers'
 import { Token } from '../../mock/types'
 
 const TokenItem = ({ item }: { item: Token }) => {
-    const [isDescription, setIsDescription] = useState(false)
+    const [isDescriptionVisible, setIsDescriptionVisible] = useState(false)
     const priceChange = [
         item.priceChange.hours24,
         item.priceChange.days7,
         item.priceChange.days365,
     ]
 
-    const handleShowDescription = useCallback(() => {
-        setIsDescription((prev) => !prev)
-    }, [setIsDescription])
+    const handleToggleDescription = useCallback(() => {
+        setIsDescriptionVisible((prev) => !prev)
+    }, [isDescriptionVisible])
+
+    const noop = useCallback(() => {}, [])
 
     return (
         <div>
             <CSSTransition
                 in
                 appear
-                addEndListener={() => {}}
+                addEndListener={noop}
                 classNames="fade"
             >
-                <T.Wrapper onClick={handleShowDescription}>
+                <T.Wrapper onClick={handleToggleDescription}>
                     <T.Inner>
                         <T.Id>
                             #
@@ -77,12 +79,12 @@ const TokenItem = ({ item }: { item: Token }) => {
                             <UsersIcon color="var(--primary-color)" />
                             <p>{numberWithSpaces(item.users)}</p>
                         </T.Users>
-                        <T.ChevronWrapper isOpen={isDescription}>
+                        <T.ChevronWrapper isOpen={isDescriptionVisible}>
                             <ChevronDownIcon color="var(--primary-color)" />
                         </T.ChevronWrapper>
                     </T.Inner>
                     <T.Description
-                        aria-expanded={isDescription}
+                        aria-expanded={isDescriptionVisible}
                     >
                         {item.description}
                     </T.Description>
