@@ -98,5 +98,16 @@ export const ChevronWrapper = styled.div<{ isOpen: boolean }>`
     transform: ${props => props.isOpen 
         ?   css`rotateX(180deg) translateY(5px)`
         :   css`rotateX(0deg)`
+    };
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+
+    svg {
+        padding-top: 1px;
+    }
+
+    :hover {
+        background-color: rgba(0,0,0,0.09);
     }
 `

@@ -7,6 +7,8 @@ export const Wrapper = styled.div`
     position: sticky;
     top: 0;
     flex: 0 1 320px;
+    display: flex;
+    flex-direction: column;
 `
 export const LogoWrapper = styled.div`
     margin: 64px 60px;
@@ -14,4 +16,10 @@ export const LogoWrapper = styled.div`
     @media (max-width: 1600px) {
         margin: 64px 0%;
     }
+`
+export const Footer = styled.div`
+    text-align: center;
+    margin-top: auto;
+    font-size: 14px;
+    color: var(--white);
 `
