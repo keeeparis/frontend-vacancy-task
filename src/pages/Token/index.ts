@@ -1,1 +1,3 @@
-export { default } from './Token'
+import Token from './Token'
+
+export default Token

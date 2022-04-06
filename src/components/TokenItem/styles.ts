@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.div`
     width: 100%;
@@ -95,10 +95,10 @@ export const Description = styled.div`
 export const ChevronWrapper = styled.div<{ isOpen: boolean }>`
     margin-left: auto;
     transition: all 0.2s ease-in-out;
-    transform: ${props => props.isOpen 
-        ?   css`rotateX(180deg) translateY(5px)`
-        :   css`rotateX(0deg)`
-    };
+    transform: ${(props) => (props.isOpen
+        ? css`rotateX(180deg) translateY(5px)`
+        : css`rotateX(0deg)`)
+};
     border-radius: 50%;
     width: 25px;
     height: 25px;

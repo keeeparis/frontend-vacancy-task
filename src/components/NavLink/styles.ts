@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.div`
     display: flex;
@@ -17,25 +17,22 @@ export const Inner = styled.div<{active?: boolean}>`
     margin-bottom: 24px;
     border-radius: 16px;
     transition-duration: 0.1s;
-    background-color: ${props => props.active
-        ?   css`var(--white)`
-        :   'inherit'
-    };
-    color: ${props => props.active 
-        ?   css`var(--black)` 
-        :   css`var(--white)` 
-    };
+    background-color: ${(props) => (props.active
+        ? css`var(--white)`
+        : 'inherit')};
+    color: ${(props) => (props.active
+        ? css`var(--black)`
+        : css`var(--white)`)};
+
     svg {
-        color: ${props => props.active 
-            ?   css`var(--primary-color)` 
-            :   css`var(--white)` 
-        };
+        color: ${(props) => (props.active
+        ? css`var(--primary-color)`
+        : css`var(--white)`)};
     }
 
     :hover {
-        outline: ${props => !props.active &&
-            css`2px solid var(--white)`
-        };  
+        outline: ${(props) => !props.active
+            && css`2px solid var(--white)`};  
     }
 `
 export const Text = styled.p`

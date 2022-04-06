@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { assignColorToSign } from './helper'
+import assignColorToSign from './helper'
 import { Prices } from './styles'
 
-const ColorNumbers = ({ 
-    data 
-} : { 
-    data: number[] 
+const ColorNumbers = ({
+    data,
+} : {
+    data: number[]
 }) => (
     <Prices>
         {data.map((element, ind) => (
@@ -16,6 +16,5 @@ const ColorNumbers = ({
         ))}
     </Prices>
 )
-
 
 export default ColorNumbers

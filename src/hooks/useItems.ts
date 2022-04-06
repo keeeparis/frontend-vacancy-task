@@ -1,12 +1,14 @@
-import { useMemo } from "react"
+import { useMemo } from 'react'
 
-import { Token } from "../mock/types"
+import { Token } from '../mock/types'
 
-export const useItems = (data: Token[], category: string) => {
+const useItems = (data: Token[], category: string) => {
     const sortedItems = useMemo(() => {
         if (category === 'all') return data
-		return data.filter(item => item.categories.includes(category))
+        return data.filter((item) => item.categories.includes(category))
     }, [data, category])
 
     return sortedItems
 }
+
+export default useItems

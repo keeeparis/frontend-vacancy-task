@@ -1,1 +1,3 @@
-export { default } from './ColorNumbers'
+import ColorNumbers from './ColorNumbers'
+
+export default ColorNumbers

@@ -1,5 +1,5 @@
-import { useLocation } from 'react-router'
-import { Link } from 'react-router-dom'
+import React from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 import { Menu } from '../../mock/types'
 import * as N from './styles'

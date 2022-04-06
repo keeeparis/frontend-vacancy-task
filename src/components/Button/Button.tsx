@@ -1,18 +1,17 @@
-import { ButtonHTMLAttributes, FC } from 'react'
+import React, { ButtonHTMLAttributes, FC } from 'react'
 
-import * as B from './styles'
+import ButtonWrap from './styles'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     active?: boolean
 }
 
-const Button:FC<ButtonProps> = ({ 
-    children, ...props 
+const Button:FC<ButtonProps> = ({
+    children, ...props
 }) => (
-    <B.Button {...props}>
+    <ButtonWrap {...props}>
         {children}
-    </B.Button>
+    </ButtonWrap>
 )
-
 
 export default Button

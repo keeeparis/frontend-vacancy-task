@@ -8,9 +8,9 @@ export interface Token {
     description: string,
     price: number,
     priceChange: {
-      hours24: number,
-      days7: number,
-      days365: number,
+        hours24: number,
+        days7: number,
+        days365: number,
     },
     volume: number,
     volumeChangePercentage: number,
@@ -20,7 +20,7 @@ export interface Token {
 }
 
 export interface Menu {
-  id: string,
-  title: string,
-  icon: JSX.Element,
+    id: string,
+    title: string,
+    icon: JSX.Element,
 }

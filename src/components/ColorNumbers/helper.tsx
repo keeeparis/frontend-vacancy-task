@@ -1,9 +1,29 @@
+import React from 'react'
 import { Green, Red } from './styles'
 
-export const assignColorToSign = (e: number) => {
-    return (e > 0) 
-    ?   <Green>+{e}%</Green>
-    :   (e < 0)
-        ?   <Red>{e}%</Red>
-        :   <div>{e}%</div>
+const assignColorToSign = (e: number) => {
+    if (e > 0) {
+        return (
+            <Green>
+                +
+                {e}
+                %
+            </Green>
+        )
+    } if (e < 0) {
+        return (
+            <Red>
+                {e}
+                %
+            </Red>
+        )
+    }
+    return (
+        <div>
+            {e}
+            %
+        </div>
+    )
 }
+
+export default assignColorToSign

@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
     :root {
         --primary-color: #6347F5;
         --gradient-color: linear-gradient(201.66deg, #B380FD 12.94%, #6347F5 78.23%);
@@ -37,3 +37,4 @@ export const GlobalStyle = createGlobalStyle`
         text-decoration: none;
     }
 `
+export default GlobalStyle

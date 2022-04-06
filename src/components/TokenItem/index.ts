@@ -1,1 +1,3 @@
-export { default } from './TokenItem'
+import TokenItem from './TokenItem'
+
+export default TokenItem

@@ -1,1 +1,3 @@
-export { default } from './NavLink'
+import NavLink from './NavLink'
+
+export default NavLink
