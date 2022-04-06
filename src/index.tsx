@@ -1,11 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// import React from 'react';
+import { createRoot } from 'react-dom/client';
 
 import AppRouter from './containers/AppRouter';
 
-ReactDOM.render(
-    // <React.StrictMode>
-        <AppRouter />,
-    // </React.StrictMode>,
-    document.getElementById('root')
-);
+createRoot(document.getElementById('root') as HTMLDivElement)
+    .render(<AppRouter />)
