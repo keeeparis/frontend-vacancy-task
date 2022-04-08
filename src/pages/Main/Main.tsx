@@ -1,10 +1,10 @@
 import React from 'react'
-import * as M from './styles'
+import * as G from '../../styles'
 
 const Main = () => (
-    <M.Header>
-        <M.H1>Main Page</M.H1>
-    </M.Header>
+    <G.Header>
+        <G.H1>Main Page</G.H1>
+    </G.Header>
 )
 
 export default Main

@@ -23,4 +23,5 @@ export interface Menu {
     id: string,
     title: string,
     icon: JSX.Element,
+    path: string
 }

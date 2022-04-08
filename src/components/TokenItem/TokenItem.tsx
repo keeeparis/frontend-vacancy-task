@@ -7,7 +7,7 @@ import * as T from './styles'
 
 import { ReactComponent as UsersIcon } from '../../media/users.svg'
 import { ReactComponent as ChevronDownIcon } from '../../media/chevron-down.svg'
-import numberWithSpaces from '../../utils/addSpaceToNumbers'
+import addSpaceToNumbers from '../../utils/addSpaceToNumbers'
 import { Token } from '../../mock/types'
 
 const TokenItem = ({ item }: { item: Token }) => {
@@ -55,7 +55,7 @@ const TokenItem = ({ item }: { item: Token }) => {
                         </T.PriceWrapper>
                         <T.Volume>
                             <p>
-                                {numberWithSpaces(item.volume)}
+                                {addSpaceToNumbers(item.volume)}
                                 {' '}
                                 $
                             </p>
@@ -66,7 +66,7 @@ const TokenItem = ({ item }: { item: Token }) => {
                         </T.Volume>
                         <T.Volume>
                             <p>
-                                {numberWithSpaces(item.tvl)}
+                                {addSpaceToNumbers(item.tvl)}
                                 {' '}
                                 $
                             </p>
@@ -77,7 +77,7 @@ const TokenItem = ({ item }: { item: Token }) => {
                         </T.Volume>
                         <T.Users>
                             <UsersIcon color="var(--primary-color)" />
-                            <p>{numberWithSpaces(item.users)}</p>
+                            <p>{addSpaceToNumbers(item.users)}</p>
                         </T.Users>
                         <T.ChevronWrapper isOpen={isDescriptionVisible}>
                             <ChevronDownIcon color="var(--primary-color)" />

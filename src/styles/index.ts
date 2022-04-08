@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
     :root {
@@ -43,3 +43,12 @@ const GlobalStyle = createGlobalStyle`
     }
 `
 export default GlobalStyle
+
+export const Header = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+`
+export const H1 = styled.h1`
+    font-size: 36px;
+`

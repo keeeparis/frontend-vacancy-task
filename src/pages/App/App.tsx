@@ -2,15 +2,16 @@ import React, { useState, SyntheticEvent, useCallback } from 'react'
 
 import TokenItem from '../../components/TokenItem'
 import Button from '../../components/Button'
-import * as A from './styles'
+import * as G from '../../styles'
+import TabsWrap from './styles'
 
 import { tokens, categories } from '../../mock/tokens'
-import useItems from '../../hooks/useItems'
+import useTokens from '../../hooks/useTokens'
 
 const App = () => {
     const [category, setCategory] = useState(categories[0])
     const [loading, setLoading] = useState(false)
-    const sortedItems = useItems(tokens, category.id)
+    const sortedTokens = useTokens(tokens, category.id)
 
     const handleCategoryChange = useCallback((e: SyntheticEvent<HTMLButtonElement>) => {
         const categoryCurrent = (e.target as HTMLButtonElement).dataset
@@ -30,9 +31,9 @@ const App = () => {
 
     return (
         <>
-            <A.Header>
-                <A.H1>Токены Everscale</A.H1>
-                <A.Tabs>
+            <G.Header>
+                <G.H1>Токены Everscale</G.H1>
+                <TabsWrap>
                     {categories.map((item) => (
                         <Button
                             key={item.id}
@@ -44,9 +45,9 @@ const App = () => {
                             {item.title}
                         </Button>
                     ))}
-                </A.Tabs>
-            </A.Header>
-            {!loading && sortedItems.map((item) => (
+                </TabsWrap>
+            </G.Header>
+            {!loading && sortedTokens.map((item) => (
                 <TokenItem key={item.id} item={item} />
             ))}
         </>

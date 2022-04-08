@@ -1,21 +1,21 @@
 import React from 'react'
-import { Green, Red } from './styles'
+import * as A from './styles'
 
-const assignColorToSign = (e: number) => {
+const assignColorAndSignToNumber = (e: number) => {
     if (e > 0) {
         return (
-            <Green>
+            <A.Green>
                 +
                 {e}
                 %
-            </Green>
+            </A.Green>
         )
     } if (e < 0) {
         return (
-            <Red>
+            <A.Red>
                 {e}
                 %
-            </Red>
+            </A.Red>
         )
     }
     return (
@@ -26,4 +26,4 @@ const assignColorToSign = (e: number) => {
     )
 }
 
-export default assignColorToSign
+export default assignColorAndSignToNumber

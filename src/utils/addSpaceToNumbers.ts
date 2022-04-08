@@ -1,3 +1,3 @@
-export default function numberWithSpaces(x: number) {
+export default function addSpaceToNumbers(x: number) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
 }

@@ -7,11 +7,11 @@ import * as N from './styles'
 const NavLink = ({ item }: { item: Menu }) => {
     const location = useLocation()
 
-    const isActive = location.pathname === `/${item.id}`
+    const isActive = location.pathname === item.path
 
     return (
         <N.Wrapper>
-            <Link to={`/${item.id}`}>
+            <Link to={item.path}>
                 <N.Inner active={isActive}>
                     {item.icon}
                     <N.Text>{item.title}</N.Text>

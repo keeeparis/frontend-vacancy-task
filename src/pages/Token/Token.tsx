@@ -1,15 +1,15 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 
-import * as T from './styles'
+import * as G from '../../styles'
 
 const Token = () => {
     const params = useParams()
 
     return (
-        <T.Header>
-            <T.H1>{params.id}</T.H1>
-        </T.Header>
+        <G.Header>
+            <G.H1>{params.id}</G.H1>
+        </G.Header>
     )
 }
 

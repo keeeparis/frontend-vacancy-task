@@ -22,11 +22,13 @@ const icons = {
 const menu = [
     {
         id: 'tokens',
+        path: '/',
         title: 'Токены',
         icon: icons.tokens,
     },
     {
         id: 'search',
+        path: '/search',
         title: 'Поиск',
         icon: icons.search,
     },

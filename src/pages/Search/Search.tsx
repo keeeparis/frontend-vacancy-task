@@ -1,10 +1,10 @@
 import React from 'react'
-import * as S from './styles'
+import * as G from '../../styles'
 
 const Search = () => (
-    <S.Header>
-        <S.H1>Search</S.H1>
-    </S.Header>
+    <G.Header>
+        <G.H1>Search</G.H1>
+    </G.Header>
 )
 
 export default Search

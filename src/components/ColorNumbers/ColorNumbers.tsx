@@ -1,20 +1,20 @@
 import React from 'react'
 
-import assignColorToSign from './helper'
-import { Prices } from './styles'
+import assignColorAndSignToNumber from './helper'
+import * as C from './styles'
 
 const ColorNumbers = ({
     data,
 } : {
     data: number[]
 }) => (
-    <Prices>
-        {data.map((element, ind) => (
-            <React.Fragment key={ind}>
-                {assignColorToSign(element)}
+    <C.Prices>
+        {data.map((element, i) => (
+            <React.Fragment key={i}>
+                {assignColorAndSignToNumber(element)}
             </React.Fragment>
         ))}
-    </Prices>
+    </C.Prices>
 )
 
 export default ColorNumbers
