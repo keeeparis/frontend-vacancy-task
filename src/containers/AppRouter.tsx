@@ -1,29 +1,37 @@
-import React, { lazy, Suspense } from 'react'
+import React from 'react'
 import {
-    // BrowserRouter as Router,
     HashRouter as Router,
     Routes,
     Route,
 } from 'react-router-dom'
 
+import LazyMinLoadTime from './LazyMinLoadTime'
+import Suspense from './Suspense'
 import Layout from './Layout'
 
-const App = lazy(() => import('../pages/App'))
-const Search = lazy(() => import('../pages/Search'))
-const Token = lazy(() => import('../pages/Token'))
+const App = LazyMinLoadTime(() => import('../pages/App'))
+const Search = LazyMinLoadTime(() => import('../pages/Search'))
+const Token = LazyMinLoadTime(() => import('../pages/Token'))
 
 const AppRouter = () => (
-    <Suspense fallback={<div>Loading...</div>}>
-        <Router basename="/">
-            <Routes>
-                <Route path="/" element={<Layout />}>
-                    <Route index element={<App />} />
-                    <Route path="search" element={<Search />} />
-                    <Route path=":id" element={<Token />} />
-                </Route>
-            </Routes>
-        </Router>
-    </Suspense>
+    <Router basename="/">
+        <Routes>
+            <Route path="/" element={<Layout />}>
+                <Route
+                    index
+                    element={<Suspense component={<App />} />}
+                />
+                <Route
+                    path="search"
+                    element={<Suspense component={<Search />} />}
+                />
+                <Route
+                    path=":id"
+                    element={<Suspense component={<Token />} />}
+                />
+            </Route>
+        </Routes>
+    </Router>
 )
 
 export default AppRouter

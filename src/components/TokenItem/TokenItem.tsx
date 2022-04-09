@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom'
 import React, { useCallback, useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
 
+import addSpaceToNumbers from '../../utils/addSpaceToNumbers'
 import ColorNumbers from '../ColorNumbers'
 import * as T from './styles'
 
 import { ReactComponent as UsersIcon } from '../../media/users.svg'
 import { ReactComponent as ChevronDownIcon } from '../../media/chevron-down.svg'
-import addSpaceToNumbers from '../../utils/addSpaceToNumbers'
 import { Token } from '../../mock/types'
 
 const TokenItem = ({ item }: { item: Token }) => {

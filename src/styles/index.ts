@@ -57,13 +57,13 @@ const GlobalStyle = createGlobalStyle`
             transition: all 650ms;
         }
         &-exit {
-            max-height: 340px;
-            opacity: 1;
+            max-height: 340px !important;
+            opacity: 1 !important;
         }
         &-exit-active, &-exit-done {
-            max-height: 0;
-            opacity: 0;
-            transition: all 250ms ;
+            max-height: 0 !important;
+            opacity: 0 !important;
+            transition: all 200ms ;
         }
     }
 `
