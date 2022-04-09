@@ -52,8 +52,8 @@ const GlobalStyle = createGlobalStyle`
             position: relative;
         }
         &-enter-active, &-enter-done {
-            max-height: 340px;
-            opacity: 1;
+            max-height: 340px !important;
+            opacity: 1 !important;
             transition: all 650ms;
         }
         &-exit {
