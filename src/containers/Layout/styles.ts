@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
 export const Container = styled.div`
     width: 100%;
     height: 100vh;
-    padding: 0 128px 66px;
+    padding: 0 112px 66px 128px;
     border-radius: 32px 0 0 0;
     margin-left: -32px;
     z-index: 1;

@@ -10,6 +10,7 @@ export const Prices = styled.div`
     font-size: 14px;
     display: flex;
     color: var(--light-gray);
+    letter-spacing: 0.02em;
 
     > :not(:last-child)::after {
         content: '•';

@@ -2,8 +2,8 @@ import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.div`
     width: 100%;
-    padding: 24px;
-    border-radius: 8px;
+    padding: 22px 24px;
+    border-radius: 16px;
     background-color: #fff;
     margin-bottom: 8px;
     display: flex;
@@ -26,15 +26,17 @@ export const Inner = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 12px;
     width: 100%;
-    
 `
 export const Id = styled.p`
     color: var(--light-gray);
-    flex: 0 0 40px;
+    flex: 0 0 35px;
+    margin-bottom: 2px;
 `
 export const Logo = styled.img`
-    margin-right: 20px;
+    margin-right: 8px;
+    margin-bottom: 2px;
     width: 40px;
     height: 40px;
 `
@@ -42,6 +44,7 @@ export const Name = styled.div`
     display: flex;
     flex-direction: column;
     flex: 0 1 220px;
+    font-size: 21px;
 
     a:hover {
         text-decoration: underline;
@@ -52,15 +55,17 @@ export const FullName = styled.p`
 `
 export const Symbol = styled.p`
     color: var(--primary-color);
+    margin-top: -2px;
+    font-size: 16px;
 `
 export const PriceWrapper = styled.div`
-    flex: 0 1 220px;
+    flex: 0 1 219.4px;
 `
 export const Price = styled.p`
     color: var(--primary-color);
 `
 export const Volume = styled.div`
-    flex: 0 1 220px;
+    flex: 0 1 219.4px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -95,14 +100,13 @@ export const ChevronWrapper = styled.div<{ isOpen: boolean }>`
         : css`rotateX(0deg)`)
 };
     border-radius: 50%;
-    width: 25px;
-    height: 25px;
+    width: 32px;
+    height: 32px;
 
     svg {
         padding-top: 1px;
-    }
-
-    :hover {
-        background-color: rgba(0,0,0,0.09);
+        margin-left: 4px;
+        width: 100%;
+        height: 100%;
     }
 `

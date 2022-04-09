@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-    padding: 24px 64px 24px 24px;
+    padding: 0 32px 24px 0;
+    
     background: var(--gradient-color);
     height: 100vh;
     position: sticky;
@@ -11,11 +12,7 @@ export const Wrapper = styled.div`
     flex-direction: column;
 `
 export const LogoWrapper = styled.div`
-    margin: 64px 60px;
-
-    @media (max-width: 1600px) {
-        margin: 64px 0%;
-    }
+    margin: 64px 60px 68px;
 `
 export const Footer = styled.div`
     text-align: center;

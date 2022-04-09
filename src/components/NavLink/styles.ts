@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 export const Wrapper = styled.div`
     display: flex;
     justify-content: center;
+    padding: 0 48px;
 
     a {
         flex: 0 1 224px;
@@ -12,6 +13,7 @@ export const Wrapper = styled.div`
 export const Inner = styled.div<{active?: boolean}>`
     display: flex;
     align-items: center;
+    height: 60px;
     padding: 16px 24px;
     gap: 24px;
     margin-bottom: 24px;
