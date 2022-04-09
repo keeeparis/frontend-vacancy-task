@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react'
 import {
-    BrowserRouter as Router,
+    // BrowserRouter as Router,
+    HashRouter as Router,
     Routes,
     Route,
 } from 'react-router-dom'
@@ -13,7 +14,7 @@ const Token = lazy(() => import('../pages/Token'))
 
 const AppRouter = () => (
     <Suspense fallback={<div>Loading...</div>}>
-        <Router basename="/frontend-vacancy-task">
+        <Router basename="/">
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<App />} />
