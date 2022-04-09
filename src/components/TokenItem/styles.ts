@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.div`
     width: 100%;
-    padding: 22px 24px;
+    padding: 24px;
     border-radius: 16px;
     background-color: #fff;
     margin-bottom: 8px;
@@ -12,7 +12,6 @@ export const Wrapper = styled.div`
     cursor: pointer;
     transition-duration: 0.1s;
     box-shadow: 0px 0px 25px 0px #0000000A;
-
 
     >svg {
         margin-left: auto

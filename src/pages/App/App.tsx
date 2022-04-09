@@ -1,12 +1,14 @@
-import React, { useState, SyntheticEvent, useCallback } from 'react'
+import React, {
+    useState, SyntheticEvent, useCallback, useEffect,
+} from 'react'
 
 import TokenItem from '../../components/TokenItem'
+import useTokens from '../../hooks/useTokens'
 import Button from '../../components/Button'
 import * as G from '../../styles'
 import TabsWrap from './styles'
 
 import { tokens, categories } from '../../mock/tokens'
-import useTokens from '../../hooks/useTokens'
 
 const App = () => {
     const [category, setCategory] = useState(categories[0])
@@ -20,14 +22,14 @@ const App = () => {
                 id: categoryCurrent.id,
                 title: categoryCurrent.title,
             }
-            // простое решение по созданию плавного появления
             setLoading(true)
             setCategory(obj)
-            setTimeout(() => {
-                setLoading(false)
-            }, 100)
         }
     }, [])
+
+    useEffect(() => {
+        setLoading(false)
+    })
 
     return (
         <>
