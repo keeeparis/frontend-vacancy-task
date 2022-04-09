@@ -33,13 +33,38 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
     }
 
-    .fade-appear {
-        opacity: 0.01;
+    .fade {
+        &-appear {
+            opacity: 0.01;
+        }
+        &-appear-active {
+            opacity: 1;
+            transition: opacity 500ms ease-in;
+        }
     }
 
-    .fade-appear.fade-appear-active {
-        opacity: 1;
-        transition: opacity 500ms ease-in;
+    .description-visible {
+        &-enter {
+            max-height: 0;
+            overflow: hidden;
+            z-index: 1;
+            opacity: 0;
+            position: relative;
+        }
+        &-enter-active, &-enter-done {
+            max-height: 340px;
+            opacity: 1;
+            transition: all 650ms;
+        }
+        &-exit {
+            max-height: 340px;
+            opacity: 1;
+        }
+        &-exit-active, &-exit-done {
+            max-height: 0;
+            opacity: 0;
+            transition: all 250ms ;
+        }
     }
 `
 export default GlobalStyle

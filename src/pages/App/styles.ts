@@ -7,6 +7,7 @@ const TabsWrap = styled.div`
     background-color: var(--white);
     border-radius: 24px;
     gap: 3px;
+    box-shadow: 0px 0px 25px 0px #0000000A;
 `
 
 export default TabsWrap

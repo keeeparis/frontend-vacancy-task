@@ -83,11 +83,19 @@ const TokenItem = ({ item }: { item: Token }) => {
                             <ChevronDownIcon color="var(--primary-color)" />
                         </T.ChevronWrapper>
                     </T.Inner>
-                    <T.Description
-                        aria-expanded={isDescriptionVisible}
+                    <CSSTransition
+                        in={isDescriptionVisible}
+                        timeout={400}
+                        classNames="description-visible"
                     >
-                        {item.description}
-                    </T.Description>
+                        <T.Description
+                            aria-expanded={isDescriptionVisible}
+                        >
+                            <T.DescriptionInner>
+                                {item.description}
+                            </T.DescriptionInner>
+                        </T.Description>
+                    </CSSTransition>
                 </T.Wrapper>
             </CSSTransition>
         </div>

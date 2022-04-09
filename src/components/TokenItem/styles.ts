@@ -11,6 +11,8 @@ export const Wrapper = styled.div`
     flex-direction: column;
     cursor: pointer;
     transition-duration: 0.1s;
+    box-shadow: 0px 0px 25px 0px #0000000A;
+
 
     >svg {
         margin-left: auto
@@ -79,18 +81,11 @@ export const Description = styled.div`
     color: var(--gray);
     margin-top: 0;
     width: 100%;
-    max-height: 0px;
+    max-height: 0;
     overflow: hidden;
-    opacity: 0;
-    transition: all 0.4s cubic-bezier(0, 1, 0, 1);
-    
-    &[aria-expanded="true"] {
-        max-height: 200px; // !important
-        opacity: 1;
-        margin-top: 24px;
-        transition: 
-            all 0.3s ease-in-out;
-    } 
+`
+export const DescriptionInner = styled.div`
+    padding-top: 24px;
 `
 export const ChevronWrapper = styled.div<{ isOpen: boolean }>`
     margin-left: auto;
