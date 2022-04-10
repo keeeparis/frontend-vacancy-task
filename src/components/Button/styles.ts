@@ -10,6 +10,7 @@ const ButtonWrap = styled.button<{active?: boolean}>`
         && css`0px 3px 5px rgba(0, 0, 0, 0.07)`};
     font-family: inherit;
     padding: 8px;
+    height: 32px;
     font-size: 14px;
     border-radius: 16px;
     letter-spacing: 0.02em;

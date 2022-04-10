@@ -4,6 +4,8 @@ const TabsWrap = styled.div`
     display: flex;
     align-items: center;
     padding: 8px;
+    margin-right: -4px;
+    margin-top: -2px;
     background-color: var(--white);
     border-radius: 24px;
     height: 48px;

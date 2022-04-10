@@ -71,7 +71,7 @@ export const tokens = [
       'https://raw.githubusercontent.com/broxus/ton-assets/master/icons/USDCv3/logo.svg',
         categories: ['defi'],
         description: 'This is a token of the Everscale',
-        price: 1,
+        price: 0.9991,
         priceChange: {
             hours24: 0,
             days7: 0,

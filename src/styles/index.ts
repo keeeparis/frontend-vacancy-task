@@ -26,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
 
     p {
         font-size: 18px;
+        height: 22px;
     }
 
     a {
@@ -76,4 +77,5 @@ export const Header = styled.div`
 `
 export const H1 = styled.h1`
     font-size: 36px;
+    line-height: 43px;
 `
