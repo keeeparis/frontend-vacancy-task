@@ -10,9 +10,9 @@ const ColorNumbers = ({
 }) => (
     <C.Prices>
         {data.map((element, i) => (
-            <React.Fragment key={i}>
+            <div key={i}>
                 {assignColorAndSignToNumber(element)}
-            </React.Fragment>
+            </div>
         ))}
     </C.Prices>
 )
