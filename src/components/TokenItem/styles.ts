@@ -79,6 +79,10 @@ export const Users = styled.div`
     flex-direction: row;
     align-items: center;
     gap: 8px;
+
+    svg {
+        color: var(--primary-color);
+    }
 `
 export const Description = styled.div`
     font-size: 16px;
@@ -96,8 +100,9 @@ export const ChevronWrapper = styled.div<{ isOpen: boolean }>`
     transition: all 0.2s ease-in-out;
     transform: ${(props) => (props.isOpen
         ? css`rotateX(180deg) translateY(5px)`
-        : css`rotateX(0deg)`)
-};
+        : css`rotateX(0deg)`)};
+    margin-top: ${(props) => (props.isOpen
+        && '4px')};
     border-radius: 50%;
     width: 32px;
     height: 32px;
@@ -107,5 +112,6 @@ export const ChevronWrapper = styled.div<{ isOpen: boolean }>`
         margin-left: 4px;
         width: 100%;
         height: 100%;
+        color: var(--primary-color);
     }
 `

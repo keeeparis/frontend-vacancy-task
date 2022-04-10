@@ -82,7 +82,7 @@ export const Left = styled(Blob)`
     animation: ${blobLeft} 1s infinite ease-in;
 `
 export const MoveBlob = styled(Blob)`
-    background: #fff;
+    background: var(--black);
     top: 0;
     animation: ${blobSpinnerMover} 1s infinite ease-in;
 `

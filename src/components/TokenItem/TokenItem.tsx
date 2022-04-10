@@ -1,13 +1,13 @@
-import { Link } from 'react-router-dom'
-import React, { useCallback, useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
+import React, { useCallback, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import addSpaceToNumbers from '../../utils/addSpaceToNumbers'
 import ColorNumbers from '../ColorNumbers'
 import * as T from './styles'
 
-import { ReactComponent as UsersIcon } from '../../media/users.svg'
 import { ReactComponent as ChevronDownIcon } from '../../media/chevron-down.svg'
+import { ReactComponent as UsersIcon } from '../../media/users.svg'
 import { Token } from '../../mock/types'
 
 const TokenItem = ({ item }: { item: Token }) => {
@@ -76,11 +76,11 @@ const TokenItem = ({ item }: { item: Token }) => {
                             </T.VolChange>
                         </T.Volume>
                         <T.Users>
-                            <UsersIcon color="var(--primary-color)" />
+                            <UsersIcon />
                             <p>{addSpaceToNumbers(item.users)}</p>
                         </T.Users>
                         <T.ChevronWrapper isOpen={isDescriptionVisible}>
-                            <ChevronDownIcon color="var(--primary-color)" />
+                            <ChevronDownIcon />
                         </T.ChevronWrapper>
                     </T.Inner>
                     <CSSTransition
@@ -88,9 +88,7 @@ const TokenItem = ({ item }: { item: Token }) => {
                         timeout={400}
                         classNames="description-visible"
                     >
-                        <T.Description
-                            aria-expanded={isDescriptionVisible}
-                        >
+                        <T.Description aria-expanded={isDescriptionVisible}>
                             <T.DescriptionInner>
                                 {item.description}
                             </T.DescriptionInner>

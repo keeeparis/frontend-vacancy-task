@@ -1,9 +1,9 @@
 import React from 'react'
 
 import NavLink from '../../components/NavLink'
+import menu from '../../mock/menu'
 import * as N from './styles'
 
-import menu from '../../mock/menu'
 import { ReactComponent as LogoIcon } from '../../media/Logo.svg'
 
 const Navigation = () => (

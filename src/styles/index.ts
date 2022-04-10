@@ -39,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
         }
         &-appear-active {
             opacity: 1;
-            transition: opacity 300ms ease-in 0.1s;
+            transition: opacity 300ms ease-in 100ms;
         }
     }
 
