@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/frontend-vacancy-task/static/js/main.3627d143.js",
+    "static/css/122.e80901dc.chunk.css": "/frontend-vacancy-task/static/css/122.e80901dc.chunk.css",
+    "static/js/122.f5026c70.chunk.js": "/frontend-vacancy-task/static/js/122.f5026c70.chunk.js",
+    "static/js/870.b27d4c69.chunk.js": "/frontend-vacancy-task/static/js/870.b27d4c69.chunk.js",
+    "static/js/526.aea73f93.chunk.js": "/frontend-vacancy-task/static/js/526.aea73f93.chunk.js",
+    "static/media/Logo.svg": "/frontend-vacancy-task/static/media/Logo.6011d1c48c28d62fc12bd2e4a48657d0.svg",
+    "static/media/users.svg": "/frontend-vacancy-task/static/media/users.1bb4205d103c297faca216d2df1d2ada.svg",
+    "index.html": "/frontend-vacancy-task/index.html",
+    "static/media/chevron-down.svg": "/frontend-vacancy-task/static/media/chevron-down.b5f970ec9b5a1d496085ed4f23527ac4.svg",
+    "main.3627d143.js.map": "/frontend-vacancy-task/static/js/main.3627d143.js.map",
+    "122.e80901dc.chunk.css.map": "/frontend-vacancy-task/static/css/122.e80901dc.chunk.css.map",
+    "122.f5026c70.chunk.js.map": "/frontend-vacancy-task/static/js/122.f5026c70.chunk.js.map",
+    "870.b27d4c69.chunk.js.map": "/frontend-vacancy-task/static/js/870.b27d4c69.chunk.js.map",
+    "526.aea73f93.chunk.js.map": "/frontend-vacancy-task/static/js/526.aea73f93.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.3627d143.js"
+  ]
+}

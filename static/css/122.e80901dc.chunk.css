@@ -1,0 +1,2 @@
+.description-visible-enter{max-height:0;opacity:0;overflow:hidden;position:relative;z-index:1}.description-visible-enter-active,.description-visible-enter-done{max-height:20rem!important;opacity:1!important;transition:all .8s}.description-visible-exit{max-height:20rem!important;opacity:1!important}.description-visible-exit-active,.description-visible-exit-done{max-height:0!important;opacity:0!important;transition:all .4s}
+/*# sourceMappingURL=122.e80901dc.chunk.css.map*/
