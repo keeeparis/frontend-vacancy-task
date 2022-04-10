@@ -5,9 +5,8 @@ import React, {
 
 import TokenItem from '../../components/TokenItem'
 import useTokens from '../../hooks/useTokens'
-import Button from '../../components/Button'
 import Header from '../../containers/Header'
-import TabsWrap from './styles'
+import Tabs from '../../components/Tabs'
 
 import { tokens, categories } from '../../mock/tokens'
 import { Category } from '../../mock/types'
@@ -18,28 +17,24 @@ const App = () => {
     const sortedTokens = useTokens(tokens, category.id)
 
     const handleCategoryChange = useCallback((item: Category) => () => {
+        if (item.id === category.id) return
         setCategory(item)
         setLoading(true)
-    }, [])
+    }, [category])
 
     useEffect(() => {
         setLoading(false)
-    })
+    }, [category])
 
     return (
         <>
-            <Header heading="Токены Everscale">
-                <TabsWrap>
-                    {categories.map((item) => (
-                        <Button
-                            key={item.id}
-                            onClick={handleCategoryChange(item)}
-                            active={category.id === item.id}
-                        >
-                            {item.title}
-                        </Button>
-                    ))}
-                </TabsWrap>
+            <Header
+                heading="Токены Everscale"
+            >
+                <Tabs
+                    handleCategoryChange={handleCategoryChange}
+                    category={category}
+                />
             </Header>
 
             {!loading && sortedTokens.map((item) => (

@@ -63,5 +63,11 @@ module.exports = {
             },
             files: 'src/components/ColorNumbers/ColorNumbers.tsx',
         },
+        {
+            rules: {
+                'no-unused-vars': 'off',
+            },
+            files: 'src/components/Tabs/Tabs.tsx',
+        },
     ],
 }
