@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
 export const Container = styled.div`
     width: 100%;
     height: 100vh;
-    padding: 0 128px 66px 128px; // 128px !
+    padding: 66px 128px 66px 128px; // 128px !
     border-radius: 32px 0 0 0;
     margin-left: -32px;
     z-index: 1;
@@ -15,15 +15,6 @@ export const Container = styled.div`
     overflow-y: scroll;
 
     @media (max-width: 1600px) {
-        padding: 0 64px 66px;
+        padding: 66px 64px 66px;
     }
-`
-export const Block = styled.div`
-    width: 100%;
-    height: 66px;
-    position: sticky;
-    background: var(--page-bg-color);
-    top: 0;
-    right: 16px;
-    z-index: 2;
 `
