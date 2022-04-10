@@ -93,8 +93,15 @@ export const Description = styled.div`
     color: var(--gray);
     margin-top: 0;
     width: 100%;
+
     max-height: 0;
     overflow: hidden;
+    /* transition: max-height .5s ease-in-out;
+    
+    &[aria-expanded="true"] {
+        max-height: 20rem;
+        transition: max-height 1s ease-in-out;
+    } */
 `
 export const DescriptionInner = styled.div`
     padding-top: 24px;

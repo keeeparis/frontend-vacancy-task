@@ -12,7 +12,7 @@ export const Prices = styled.div`
     color: var(--light-gray);
     letter-spacing: 0.02em;
 
-    > :not(:last-child)::after {
+    > :not(:last-child) div::after {
         content: '•';
         margin: 0 6px;
         color: var(--light-gray);
