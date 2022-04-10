@@ -1,15 +1,14 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-
-import * as G from '../../styles'
+import Header from '../../containers/Header'
 
 const Token = () => {
     const params = useParams()
 
+    const headingText = params.id ? params.id : 'Token'
+
     return (
-        <G.Header>
-            <G.H1>{params.id}</G.H1>
-        </G.Header>
+        <Header heading={headingText} />
     )
 }
 
