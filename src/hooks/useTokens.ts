@@ -3,12 +3,12 @@ import { useMemo } from 'react'
 import { Token } from '../mock/types'
 
 const useTokens = (data: Token[], category: string) => {
-    const sortedItems = useMemo(() => {
+    const sortedTokens = useMemo(() => {
         if (category === 'all') return data
         return data.filter((item) => item.categories.includes(category))
     }, [data, category])
 
-    return sortedItems
+    return sortedTokens
 }
 
 export default useTokens
