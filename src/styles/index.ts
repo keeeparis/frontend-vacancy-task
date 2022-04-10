@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
     :root {
@@ -43,39 +43,5 @@ const GlobalStyle = createGlobalStyle`
             transition: opacity 300ms ease-in 100ms;
         }
     }
-
-    .description-visible {
-        &-enter {
-            max-height: 0;
-            overflow: hidden;
-            z-index: 1;
-            opacity: 0;
-            position: relative;
-        }
-        &-enter-active, &-enter-done {
-            max-height: 340px !important;
-            opacity: 1 !important;
-            transition: all 650ms;
-        }
-        &-exit {
-            max-height: 340px !important;
-            opacity: 1 !important;
-        }
-        &-exit-active, &-exit-done {
-            max-height: 0 !important;
-            opacity: 0 !important;
-            transition: all 200ms ;
-        }
-    }
 `
 export default GlobalStyle
-
-export const Header = styled.div`
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-`
-export const H1 = styled.h1`
-    font-size: 36px;
-    line-height: 43px;
-`
