@@ -17,6 +17,7 @@ const App = () => {
 
     const handleCategoryChange = useCallback((e: SyntheticEvent<HTMLButtonElement>) => {
         const categoryCurrent = (e.target as HTMLButtonElement).dataset
+        if (category.id === categoryCurrent.id) return
         if (categoryCurrent.id && categoryCurrent.title) {
             const obj = {
                 id: categoryCurrent.id,
@@ -25,7 +26,7 @@ const App = () => {
             setLoading(true)
             setCategory(obj)
         }
-    }, [])
+    }, [category])
 
     useEffect(() => {
         setLoading(false)
