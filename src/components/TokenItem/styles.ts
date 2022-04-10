@@ -28,7 +28,7 @@ export const Inner = styled.div`
     align-items: center;
     gap: 12px;
     width: 100%;
-    height: 44px;
+    min-height: 44px;
 `
 export const Id = styled.p`
     color: var(--light-gray);
@@ -51,9 +51,9 @@ export const Name = styled.div`
         text-decoration: underline;
     }
 `
-export const FullName = styled.p`
+export const FullName = styled.div`
     font-size: 21px;
-    height: 25px;
+    min-height: 25px;
 `
 export const Symbol = styled.p`
     color: var(--primary-color);
