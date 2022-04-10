@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import addSpaceToNumbers from '../../utils/addSpaceToNumbers'
 import ColorNumbers from '../ColorNumbers'
 import * as T from './styles'
+import './styles.scss'
 
 import { ReactComponent as ChevronDownIcon } from '../../media/chevron-down.svg'
 import { ReactComponent as UsersIcon } from '../../media/users.svg'
@@ -20,7 +21,7 @@ const TokenItem = ({ item }: { item: Token }) => {
 
     const handleToggleDescription = useCallback(() => {
         setIsDescriptionVisible((prev) => !prev)
-    }, [isDescriptionVisible])
+    }, [])
 
     const noop = useCallback(() => {}, [])
 
